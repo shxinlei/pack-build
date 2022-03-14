@@ -1,4 +1,4 @@
-const publicTask = require("../publicTask")
+const publicTask = require("../task")
 const gulp = require("gulp");
 
 
@@ -7,6 +7,9 @@ const build = gulp.series(
     publicTask.jsTask,
     publicTask.esTask
 )
+
+
+
 
 
 module.exports = build

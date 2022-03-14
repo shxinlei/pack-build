@@ -6,6 +6,7 @@ const postcss = require('gulp-postcss');
 const gulp = require("gulp")
 const getAutoprefixer = require("./getAutoprefixer");
 const {babelify} = require("./constants");
+const glob = require("glob");
 
 const cmdType = process.env?.npm_lifecycle_event;
 
@@ -24,7 +25,9 @@ const lessTask = (done) => {
             [getAutoprefixer()] ,
             { modules: true }
         )).pipe(
-        gulp.dest(path.resolve(process.cwd(), "./scripts"))
+        gulp.dest(path.resolve(process.cwd(), "es"))
+    ).pipe(
+        gulp.dest(path.resolve(process.cwd(), "lib"))
     )
 
     done();
@@ -32,6 +35,8 @@ const lessTask = (done) => {
 
 const jsTask = (done) => {
     babelify()
+
+
     done();
 }
 

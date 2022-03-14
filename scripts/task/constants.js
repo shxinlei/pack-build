@@ -35,7 +35,7 @@ const babelify = (modules) => {
     const jsFileLength = glob.sync(`${src}/**/*.{js,jsx}`);
 
 
-    if(tsFileLength ){
+    if(tsFileLength){
         let tsConfig = getCompilerOptions();
         let reporter = tsDefaultReporter;
         const tsResult = gulp.src(
@@ -92,6 +92,8 @@ const babelifyInternal = (js , modules) => {
         return `${m1}${m2}/assets/${name}.css`;
     }
     // through2 生成对象流文件
+
+
     return stream.pipe(
         through2.obj(function (file , encoding , next) {
 
@@ -99,6 +101,9 @@ const babelifyInternal = (js , modules) => {
                 .replace(lessPath, replacer);
             file.contents = Buffer.from(content);
             this.push(file);
+
+
+
             next();
         }) //
     ).pipe(

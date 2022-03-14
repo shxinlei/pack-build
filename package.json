@@ -11,9 +11,7 @@
   "publishConfig": {
     "access": "public"
   },
-
   "scripts": {
-    "start": "gulp start",
     "build": "gulp build"
   },
   "typings": "./lib/index.d.ts",
@@ -22,7 +20,9 @@
     "url": "https://github.com/shxinlei/pack-build.git",
     "type": ""
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": "alick.shi",
   "license": "MIT",
   "peerDependencies": {
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
+    "glob": "^7.2.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-less": "^5.0.0",
@@ -38,7 +39,7 @@
     "gulp-typescript": "^6.0.0-alpha.1",
     "merge2": "^1.4.1",
     "minimist": "^1.2.5",
-    "react": "^17.0.2"
+    "react": ">=16.9.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.16.7",
