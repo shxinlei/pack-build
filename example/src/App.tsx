@@ -1,21 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Form , FormItem } from "@learning-ui/from"
 
-function App() {
+// Array[] ,includes, filter find map forEach indexOf split, join, Array.isArray
+
+// [] flat(); // 将多维数组转换为一维数组
+/**
+ * Object
+ *  Object.keys();
+    Object.values();
+ *  Object Object.assign()
+ */
+
+/**
+ * number
+ * 
+ */
+
+/**
+ * string 
+ * 
+ * includes
+ * indexOf,
+ * split
+ */
+/**
+ * Date
+ */
+import useTimeout from "./useTimeout"
+
+const  App = () => {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img  className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-        >
-          Learn React
-          <Form />
-          <FormItem />
-        </a>
-      </header>
+        
     </div>
   );
 }
