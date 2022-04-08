@@ -1,5 +1,4 @@
 import React from "react"
-import "../assets/index.less"
 
 
 const Fields = () => {

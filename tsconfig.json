@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "strict": true,
-    "outDir": "build/dist",
+    "outDir": "dist",
     "module": "esnext",
     "target": "es2016",
     "lib": ["es6", "dom"],
